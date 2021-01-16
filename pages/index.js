@@ -5,6 +5,7 @@ import Homepage from '../components/Homepage';
 
 function Home(props) {
   return (
+    <html lang="en">
       <div className="container-fluid">
         <Head>
           <title>SpaceX</title>
@@ -46,6 +47,7 @@ function Home(props) {
           <b>Developed By:</b> Gaurav Sharma
         </footer>
       </div>
+    </html>
   );
 }
 
