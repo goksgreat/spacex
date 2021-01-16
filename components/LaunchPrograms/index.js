@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Card, Row, Col, ListGroup, ListGroupItem } from 'react-bootstrap';
 import usePagination from '../../hooks/usePagination';
 import Loader from '../Loader';
+import ProgressiveImage from 'react-progressive-image';
 
 const LaunchPrograms = props => {
   const { launches = [], loading } = props;
@@ -21,7 +22,18 @@ const LaunchPrograms = props => {
               key={launch.mission_name}
             >
               <Card className="launch-program">
-                <Card.Img variant="top" src={launch.mission_patch_small} alt="launch-program" />
+                <ProgressiveImage
+                  src={launch.mission_patch_small}
+                  placeholder="/placeholder.jpg"
+                >
+                  {src => (
+                    <Card.Img
+                      variant="top"
+                      src={src}
+                      alt="launch-program"
+                    />
+                  )}
+                </ProgressiveImage>
                 <Card.Body>
                   <Card.Title>
                     <a
