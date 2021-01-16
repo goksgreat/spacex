@@ -21,7 +21,7 @@ const LaunchPrograms = props => {
               key={launch.mission_name}
             >
               <Card className="launch-program">
-                <Card.Img variant="top" src={launch.mission_patch_small} />
+                <Card.Img variant="top" src={launch.mission_patch_small} alt="launch-program" />
                 <Card.Body>
                   <Card.Title>
                     <a

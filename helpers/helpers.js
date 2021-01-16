@@ -27,7 +27,6 @@ export const fetchData = ({
     })
     .catch((error) => {
       onFailure && onFailure(error);
-      console.info('error', error);
     })
     .then(() => {});
 };

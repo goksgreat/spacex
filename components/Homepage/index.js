@@ -12,7 +12,6 @@ const Homepage = props => {
   });
   const [loading, setLoading] = useState(false);
   const router = useRouter();
-  console.log(router.query);
   const [launches, setLaunces] = useState([]);
   const fetchPrograms = filterVal => {
     setLoading(true);
