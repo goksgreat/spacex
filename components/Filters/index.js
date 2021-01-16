@@ -9,7 +9,7 @@ const Filters = (props) => {
     <Card>
       <Card.Title className='ml-1'>{constants.filterTitle}</Card.Title>
       <Card.Body className='pt-0'>
-        <RenderFilters filters={filters} />
+        <RenderFilters filterOptions={filters} {...props} />
       </Card.Body>
     </Card>
   );

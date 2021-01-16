@@ -6,7 +6,7 @@ import { fetchData } from '../../helpers/helpers.js';
 import Router, { useRouter } from 'next/router';
 
 const Homepage = props => {
-    const { params } = props;
+  const { params } = props;
   const [filters, setFilters] = useState({
     limit: 100,
   });
@@ -31,9 +31,13 @@ const Homepage = props => {
     });
   };
 
+  const modifyFilters = filters => {
+    filters && Router.push({ pathname: '/', query: filters });
+  }
+
   useEffect(() => {
     !params.limit && Router.push({ pathname: '/', query: filters });
-  }, [params])
+  }, [params]);
 
   React.useEffect(() => {
     if (params && params.limit) {
@@ -44,7 +48,7 @@ const Homepage = props => {
   return (
     <Row>
       <Col md={3} lg={3}>
-        <Filters />
+        <Filters modifyFilters={modifyFilters} filters={filters} />
       </Col>
       <Col md={9} lg={9}>
         <LaunchPrograms launches={launches} loading={loading} />

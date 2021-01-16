@@ -67,7 +67,7 @@ const filters = [
   },
   {
     label: 'Successful Launch',
-    value: 'successful_launch',
+    value: 'launch_success',
     options: [
       {
         label: 'True',
