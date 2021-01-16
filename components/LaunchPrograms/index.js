@@ -86,19 +86,19 @@ const LaunchPrograms = props => {
           <nav aria-label="Page navigation">
             <ul className="pagination justify-content-end">
               <li className={`page-item ${currentPage === 1 && 'disabled'}`}>
-                <a className="page-link" onClick={prev} tabindex="-1">
+                <span className="page-link" onClick={prev} tabindex="-1">
                   Previous
-                </a>
+                </span>
               </li>
               <li className="page-item">
-                <a className="page-link">{currentPage}</a>
+                <span className="page-link">{currentPage}</span>
               </li>
               <li
                 className={`page-item ${currentPage === maxPage && 'disabled'}`}
               >
-                <a className="page-link" onClick={next}>
+                <span className="page-link" onClick={next}>
                   Next
-                </a>
+                </span>
               </li>
             </ul>
           </nav>
