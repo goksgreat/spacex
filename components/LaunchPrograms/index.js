@@ -27,11 +27,7 @@ const LaunchPrograms = props => {
                   placeholder="/placeholder.jpg"
                 >
                   {src => (
-                    <Card.Img
-                      variant="top"
-                      src={src}
-                      alt="launch-program"
-                    />
+                    <Card.Img variant="top" src={src} alt="launch-program" />
                   )}
                 </ProgressiveImage>
                 <Card.Body>
@@ -81,11 +77,31 @@ const LaunchPrograms = props => {
       </Row>
       {maxPage > 1 && (
         <>
-          <div>Page {currentPage} </div>
+          {/* <div>Page {currentPage} </div>
           <div>
             <button onClick={prev}>prev</button>
             <button onClick={next}>next</button>
-          </div>
+          </div> */}
+
+          <nav aria-label="Page navigation">
+            <ul className="pagination justify-content-end">
+              <li className={`page-item ${currentPage === 1 && 'disabled'}`}>
+                <a className="page-link" onClick={prev} tabindex="-1">
+                  Previous
+                </a>
+              </li>
+              <li className="page-item">
+                <a className="page-link">{currentPage}</a>
+              </li>
+              <li
+                className={`page-item ${currentPage === maxPage && 'disabled'}`}
+              >
+                <a className="page-link" onClick={next}>
+                  Next
+                </a>
+              </li>
+            </ul>
+          </nav>
         </>
       )}
     </>
