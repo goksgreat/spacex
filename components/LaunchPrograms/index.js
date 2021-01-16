@@ -37,11 +37,11 @@ const LaunchPrograms = props => {
                   <ListGroupItem>
                     <div className="d-flex flex-column">
                       <strong>Mission IDs:</strong>
-                      <div>
+                      <ul>
                         {launch.mission_id.map(mission => (
                           <li key={mission}>{mission}</li>
                         ))}
-                      </div>
+                      </ul>
                     </div>
                   </ListGroupItem>
                   <ListGroupItem>
