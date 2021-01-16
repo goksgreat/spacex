@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Card, Row, Col, ListGroup, ListGroupItem } from 'react-bootstrap';
 import usePagination from '../../hooks/usePagination';
 import Loader from '../Loader';
 import ProgressiveImage from 'react-progressive-image';
+import constants from '../../helpers/constants';
 
 const LaunchPrograms = props => {
   const { launches = [], loading } = props;
@@ -44,7 +45,7 @@ const LaunchPrograms = props => {
                 <ListGroup className="list-group-flush">
                   <ListGroupItem>
                     <div className="d-flex flex-column">
-                      <strong>Mission IDs:</strong>
+                      <strong>{constants.missionIdsTitle}</strong>
                       <ul>
                         {launch.mission_id.map(mission => (
                           <li key={mission}>{mission}</li>
@@ -54,19 +55,19 @@ const LaunchPrograms = props => {
                   </ListGroupItem>
                   <ListGroupItem>
                     <div className="d-flex">
-                      <strong>Launch Year:</strong>
+                      <strong>{constants.launchYearTitle}</strong>
                       <span>{launch.launch_year}</span>
                     </div>
                   </ListGroupItem>
                   <ListGroupItem>
                     <div className="d-flex">
-                      <strong>Successful Launch:</strong>
+                      <strong>{constants.successfulLaunchTitle}</strong>
                       <span>{launch.launch_success ? 'True' : 'False'}</span>
                     </div>
                   </ListGroupItem>
                   <ListGroupItem>
                     <div className="d-flex">
-                      <strong>Successful Landing:</strong>
+                      <strong>{constants.successfulLandingTitle}:</strong>
                       <span>{launch.land_success ? 'True' : 'False'}</span>
                     </div>
                   </ListGroupItem>
@@ -77,17 +78,11 @@ const LaunchPrograms = props => {
       </Row>
       {maxPage > 1 && (
         <>
-          {/* <div>Page {currentPage} </div>
-          <div>
-            <button onClick={prev}>prev</button>
-            <button onClick={next}>next</button>
-          </div> */}
-
           <nav aria-label="Page navigation">
             <ul className="pagination justify-content-end">
               <li className={`page-item ${currentPage === 1 && 'disabled'}`}>
                 <span className="page-link" onClick={prev} tabindex="-1">
-                  Previous
+                  {constants.previousTitle}
                 </span>
               </li>
               <li className="page-item">
@@ -97,7 +92,7 @@ const LaunchPrograms = props => {
                 className={`page-item ${currentPage === maxPage && 'disabled'}`}
               >
                 <span className="page-link" onClick={next}>
-                  Next
+                  {constants.nextTitle}
                 </span>
               </li>
             </ul>
