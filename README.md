@@ -123,7 +123,7 @@ It follows the mobile first approach and is completely responsive.
 
 ### Mobile Devices
 
-[![Product Name Screen Shot][mobile-screenshot]](https://spacex.gauravsharma.dev){:height="300px" width="100px"}
+[![Product Name Screen Shot][mobile-screenshot]{:height="300px" width="100px"}](https://spacex.gauravsharma.dev)
 [![Product Name Screen Shot][mobile-nf-screenshot]](https://spacex.gauravsharma.dev){:height="300px" width="100px"}
 
 <!-- MARKDOWN LINKS & IMAGES -->
