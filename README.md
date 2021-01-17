@@ -32,6 +32,14 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
+    <li>
+      <a href="#features">Features</a>
+      <ul>
+        <li><a href="#server-side-rendering">Server-Side Rendering</a></li>
+        <li><a href="#build-and-packaging">Build and Packaging</a></li>
+        <li><a href="#client-side">Client Side</a></li>
+      </ul>
+    </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
@@ -81,6 +89,20 @@ This is an example of how to list things you need to use the software and how to
    ```JS
    const NEXT_PUBLIC_API_URL = 'ENTER YOUR API';
    ```
+
+## Features
+
+### Server-Side Rendering
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+### Build and Packaging
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+### Client Side
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
