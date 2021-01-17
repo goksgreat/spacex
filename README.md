@@ -110,7 +110,9 @@ The application uses React for Client-side Rendering and based on the query para
          </ul>
 
 ## Responsive Layout
-It follows the mobile first approach and is completely responsive.
+It follows the mobile first approach and is completely responsive. The application relies on bootstrap’s grid system with custom media query css and follows a flexbox structure.
+
+The application is fully response. It follows 4 column structure for devices above 1024px and 2 column for iPad and 1 column for mobile devices.
 
 ### Desktop
 
