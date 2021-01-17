@@ -44,6 +44,12 @@
         <li><a href="#mobile-devices">Mobile Devices</a></li>
       </ul>
     </li>
+    <li>
+      <a href="#performance-optimized">Performance Optimized</a>
+      <ul>
+        <li><a href="#lighthouse-audit">Lighthouse Audit</a></li>
+      </ul>
+    </li>
   </ol>
 </details>
 
@@ -130,6 +136,18 @@ The application is fully response. It follows 4 column structure for devices abo
 [![Product Name Screen Shot][mobile-screenshot]](https://spacex.gauravsharma.dev)
 [![Product Name Screen Shot][mobile-nf-screenshot]](https://spacex.gauravsharma.dev)
 
+## Performance Optimized
+The application has been fully optimized and uses static generation for better caching. All static assets (JS, CSS, images, fonts, etc) are automatically served from an Edge Network, which is blazingly fast.
+
+Application uses all the best practices and relies on an API middleware (BFF) which gives client the power to ask for exactly what they need and nothing more, making it easier to evolve APIs over time.
+Pagination is also included for results for better performance.
+
+### Lighthouse Audit
+
+Application holds good results for performance, accessibility, SEO and more in the lighthouse Audit. 
+
+[![Product Name Screen Shot][lighthouse-audit]](https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=https%3A%2F%2Fspacex.gauravsharma.dev)
+
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
@@ -150,3 +168,4 @@ The application is fully response. It follows 4 column structure for devices abo
 [mobile-screenshot]: assets/images/Mobile.jpg
 [mobile-nf-screenshot]: assets/images/NotFoundMobile.jpg
 [ipad-screenshot]: assets/images/iPad.jpg
+[lighthouse-audit]: assets/images/Lighthouse_Audit_Score.jpg
