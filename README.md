@@ -94,15 +94,23 @@ This is an example of how to list things you need to use the software and how to
 
 ### Server-Side Rendering
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+The application uses Static Generation with Client-side Rendering and skipping pre-rendering some parts of the page and then use client-side JavaScript to populate them.
 
 ### Build and Packaging
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+The deloyment has been automated with Github commits and using custom domain with Vercel. Vercel is an all-in-one platform with Global CDN supporting static & Jamstack deployment and Serverless Functions.
 
 ### Client Side
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+The application uses React for Client-side Rendering and based on the query parameters recieved from server as props can filter out the launches data.
+
+1.	User can Filter the results with help of provided Filters.
+2. Filter options are available in `/helpers/filters.js`. The same can be modified at anytime and no additional code changes are required to add the new filters or modify the existing ones.
+3. Applying any Filter reflects the below changes:
+•	Selected filter changes to selected state and mimics the toggle behavior.
+•	Applied filters changes the URL and update the Page with latest records without refreshing the page.
+•	If the page is refreshed with the applied filters in the URL – the resulting page is server side rendered & subsequent filters are again rendered on client side.
+
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
