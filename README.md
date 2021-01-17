@@ -1,9 +1,6 @@
 # [SpaceX Launch Assignment](https://spacex.gauravsharma.dev)
 
-
-
 ![version](https://img.shields.io/badge/version-1.0.0-blue.svg)
-
 
 <!-- PROJECT LOGO -->
 <br />
@@ -13,7 +10,6 @@
   </a>
 
   <h3 align="center">SpaceX Launch</h3>
-
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
@@ -49,9 +45,8 @@
   </ol>
 </details>
 
-
-
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
 [![Product Name Screen Shot][product-screenshot]](https://spacex.gauravsharma.dev)
@@ -77,7 +72,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
-* npm
+
+- npm
   ```sh
   npm install npm@latest -g
   ```
@@ -104,16 +100,18 @@ The deloyment has been automated with Github commits and using custom domain wit
 
 The application uses React for Client-side Rendering and based on the query parameters recieved from server as props can filter out the launches data.
 
-1.	User can Filter the results with help of provided Filters.
+1. User can Filter the results with help of provided Filters.
 2. Filter options are available in `/helpers/filters.js`. The same can be modified at anytime and no additional code changes are required to add the new filters or modify the existing ones.
 3. Applying any Filter reflects the below changes:
-•	Selected filter changes to selected state and mimics the toggle behavior.
-•	Applied filters changes the URL and update the Page with latest records without refreshing the page.
-•	If the page is refreshed with the applied filters in the URL – the resulting page is server side rendered & subsequent filters are again rendered on client side.
-
+   <ul>
+           <li>Selected filter changes to selected state and mimics the toggle behavior.</li>
+           <li>Applied filters changes the URL and update the Page with latest records without refreshing the page.</li>
+           <li>If the page is refreshed with the applied filters in the URL – the resulting page is server side rendered & subsequent filters are again rendered on client side.</li>
+         </ul>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
 [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
 [contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
