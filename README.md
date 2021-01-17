@@ -36,12 +36,14 @@
         <li><a href="#client-side">Client Side</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
+    <li>
+      <a href="#responsive-layout">Responsive Layout</a>
+      <ul>
+        <li><a href="#desktop">Desktop</a></li>
+        <li><a href="#ipad">iPad</a></li>
+        <li><a href="#mobile-devices">Mobile Devices</a></li>
+      </ul>
+    </li>
   </ol>
 </details>
 
