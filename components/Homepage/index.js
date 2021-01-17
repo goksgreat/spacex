@@ -3,7 +3,7 @@ import { Row, Col, Card } from 'react-bootstrap';
 import Filters from '../Filters';
 import LaunchPrograms from '../LaunchPrograms';
 import { fetchData } from '../../helpers/helpers.js';
-import Router, { useRouter } from 'next/router';
+import Router from 'next/router';
 
 const Homepage = props => {
   const { params } = props;
@@ -11,7 +11,7 @@ const Homepage = props => {
     limit: 100,
   });
   const [loading, setLoading] = useState(false);
-  const router = useRouter();
+//   const router = useRouter();
   const [launches, setLaunces] = useState([]);
   const fetchPrograms = filterVal => {
     setLoading(true);
@@ -36,7 +36,7 @@ const Homepage = props => {
   }
 
   useEffect(() => {
-    !params.limit && Router.push({ pathname: '/', query: filters });
+    !(params && params.limit) && Router.push({ pathname: '/', query: filters });
   }, [params]);
 
   React.useEffect(() => {

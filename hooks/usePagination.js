@@ -11,6 +11,7 @@ const usePagination = (dataItems, itemsPerPage) => {
   }, [currentPage, dataItems]);
 
   useEffect(() => {
+    setCurrentPage(1);
     setCurrentdata(dataItems);
     setPaginatedData(currentData(dataItems));
   }, [dataItems]);

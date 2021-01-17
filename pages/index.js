@@ -39,7 +39,7 @@ function Home(props) {
         </Head>
 
         <main>
-          <h4 className={''}>SpaceX Launch Programs</h4>
+          <h4 className={''} role="heading">SpaceX Launch Programs</h4>
         </main>
         <Homepage {...props} />
         <footer>

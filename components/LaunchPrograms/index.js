@@ -4,6 +4,7 @@ import usePagination from '../../hooks/usePagination';
 import Loader from '../Loader';
 import ProgressiveImage from 'react-progressive-image';
 import constants from '../../helpers/constants';
+import NotFound from '../NotFound';
 
 const LaunchPrograms = props => {
   const { launches = [], loading } = props;
@@ -15,6 +16,7 @@ const LaunchPrograms = props => {
     <>
       <Row>
         {loading && <Loader />}
+        {!loading && paginatedData.length === 0 && <NotFound />}
         {paginatedData &&
           paginatedData.map(launch => (
             <Col
@@ -81,7 +83,7 @@ const LaunchPrograms = props => {
       {maxPage > 1 && (
         <>
           <nav aria-label="Page navigation">
-            <ul className="pagination justify-content-end">
+            <ul className="pagination justify-content-center">
               <li className={`page-item ${currentPage === 1 && 'disabled'}`}>
                 <span className="page-link" onClick={prev} tabindex="-1">
                   {constants.previousTitle}
