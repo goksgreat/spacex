@@ -48,6 +48,7 @@
       <a href="#performance-optimized">Performance Optimized</a>
       <ul>
         <li><a href="#lighthouse-audit">Lighthouse Audit</a></li>
+        <li><a href="#api-middleware">API Middleware</a></li>
       </ul>
     </li>
   </ol>
@@ -139,7 +140,7 @@ The application is fully response. It follows 4 column structure for devices abo
 ## Performance Optimized
 The application has been fully optimized and uses static generation for better caching. All static assets (JS, CSS, images, fonts, etc) are automatically served from an Edge Network, which is blazingly fast.
 
-Application uses all the best practices and relies on an API middleware (BFF) which gives client the power to ask for exactly what they need and nothing more, making it easier to evolve APIs over time.
+Application uses all the best practices and relies on an API middleware which gives client the power to ask for exactly what they need and nothing more, making it easier to evolve APIs over time.
 Pagination is also included for results for better performance.
 
 ### Lighthouse Audit
@@ -147,6 +148,13 @@ Pagination is also included for results for better performance.
 Application holds good results for performance, accessibility, SEO and more in the lighthouse Audit. 
 
 [![Product Name Screen Shot][lighthouse-audit]](https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=https%3A%2F%2Fspacex.gauravsharma.dev)
+
+### API Middleware
+
+Application relies on a middleware API to get only the concised that that is required from the UI perspective.
+It only provides the data that is required for rendering the UI and nothing more thus converting a huge json response to concised json response
+
+`https://spacex.gauravsharma.dev/api/v1/launches`
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
