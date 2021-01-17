@@ -109,6 +109,24 @@ The application uses React for Client-side Rendering and based on the query para
            <li>If the page is refreshed with the applied filters in the URL – the resulting page is server side rendered & subsequent filters are again rendered on client side.</li>
          </ul>
 
+## Responsive Layout
+It follows the mobile first approach and is completely responsive.
+
+### Desktop
+
+[![Product Name Screen Shot][product-screenshot]](https://spacex.gauravsharma.dev)
+
+
+### iPad
+
+[![Product Name Screen Shot][ipad-screenshot]](https://spacex.gauravsharma.dev)
+
+### Mobile Devices
+
+[![Product Name Screen Shot][mobile-screenshot]](https://spacex.gauravsharma.dev)
+[![Product Name Screen Shot][mobile-nf-screenshot]](https://spacex.gauravsharma.dev)
+
+
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
@@ -125,3 +143,6 @@ The application uses React for Client-side Rendering and based on the query para
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
 [product-screenshot]: assets/images/Landscape_Desktop.jpg
+[mobile-screenshot]: assets/images/Mobile.jpg
+[mobile-nf-screenshot]: assets/images/NotFoundMobile.jpg
+[ipad-screenshot]: assets/images/iPad.jpg
