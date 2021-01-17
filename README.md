@@ -49,6 +49,7 @@
       <ul>
         <li><a href="#lighthouse-audit">Lighthouse Audit</a></li>
         <li><a href="#api-middleware">API Middleware</a></li>
+        <li><a href="#lazy-loading-images">Lazy Loading Images</a></li>
       </ul>
     </li>
     <li>
@@ -158,6 +159,10 @@ Application relies on a middleware API to get only the concised that that is req
 It only provides the data that is required for rendering the UI and nothing more thus converting a huge json response to concised json response
 
 `https://spacex.gauravsharma.dev/api/v1/launches`
+
+### Lazy Loading Images
+
+Images are lazy loaded and a placeholder image is shown to the user while the images are loading
 
 ## Unit Tests
 
