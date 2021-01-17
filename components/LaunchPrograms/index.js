@@ -18,17 +18,19 @@ const LaunchPrograms = props => {
         {paginatedData &&
           paginatedData.map(launch => (
             <Col
-              md={3}
+              md={6}
+              xl={3}
+              lg={6}
               className="mb-4 d-flex align-items-stretch"
               key={launch.mission_name}
             >
-              <Card className="launch-program">
+              <Card className="launch-program mx-auto">
                 <ProgressiveImage
                   src={launch.mission_patch_small}
                   placeholder="/placeholder.jpg"
                 >
                   {src => (
-                    <Card.Img variant="top" src={src} alt="launch-program" />
+                    <Card.Img variant="top" className="mx-auto" src={src} alt="launch-program" />
                   )}
                 </ProgressiveImage>
                 <Card.Body>

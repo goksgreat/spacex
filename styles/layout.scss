@@ -49,22 +49,46 @@ footer {
 }
 
 .launch-program {
+    padding-bottom: 1rem;
+    width: 95%;
+  .card-body {
+    padding: 0 1.25rem;
+    .card-title {
+      a {
+        font-size: 1rem;
+        color: #6868c6;
+      }
+    }
+  }
+  .list-group-item {
+    font-size: 0.9rem;
+    padding: 0.25rem 1.25rem;
+  }
   img {
     margin: 1.5rem;
     width: 80%;
     height: auto;
     background: #dfdfdf;
   }
-  .list-group-flush{
+  .list-group-flush {
     border: 0;
-    &>.list-group-item {
-        border: 0;
+    & > .list-group-item {
+      border: 0;
     }
   }
 }
 
-.pagination {
-    span {
-        cursor: pointer;
+@media screen and (max-width: 992px) {
+    .launch-program {
+      width: 100%;
+    }
+    .space-x-loader {
+        width: 100%;
     }
   }
+
+.pagination {
+  span {
+    cursor: pointer;
+  }
+}

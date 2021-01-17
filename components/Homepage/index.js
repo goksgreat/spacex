@@ -47,10 +47,10 @@ const Homepage = props => {
   }, [params]);
   return (
     <Row>
-      <Col md={3} lg={3}>
+      <Col md={3} lg={3} xl={2} className="mb-4">
         <Filters modifyFilters={modifyFilters} filters={filters} />
       </Col>
-      <Col md={9} lg={9}>
+      <Col md={9} lg={9} xl={9} className="mx-auto">
         <LaunchPrograms launches={launches} loading={loading} />
       </Col>
     </Row>
