@@ -110,12 +110,12 @@ The application uses React for Client-side Rendering and based on the query para
          </ul>
 
 ## Responsive Layout
+
 It follows the mobile first approach and is completely responsive.
 
 ### Desktop
 
 [![Product Name Screen Shot][product-screenshot]](https://spacex.gauravsharma.dev)
-
 
 ### iPad
 
@@ -123,9 +123,8 @@ It follows the mobile first approach and is completely responsive.
 
 ### Mobile Devices
 
-[![Product Name Screen Shot][mobile-screenshot | width=100]](https://spacex.gauravsharma.dev)
-[![Product Name Screen Shot][mobile-nf-screenshot | width=100]](https://spacex.gauravsharma.dev)
-
+[![Product Name Screen Shot][mobile-screenshot]](https://spacex.gauravsharma.dev){:height="300px" width="100px"}
+[![Product Name Screen Shot][mobile-nf-screenshot]](https://spacex.gauravsharma.dev){:height="300px" width="100px"}
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
