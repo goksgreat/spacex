@@ -18,7 +18,7 @@ const Filters = props => {
     <div key={filter.value}>
       <p className="text-center mb-0">{filter.label}</p>
       <hr className="mt-0" />
-      <Row className="mb-4">
+      <Row className="mb-4 mx-auto max-width-350">
         {filter.options &&
           filter.options.map((filterVals, index) => (
             <Col
@@ -27,6 +27,7 @@ const Filters = props => {
               className={`${index % 2 === 0 ? 'left-col' : 'right-col'}`}
             >
               <span
+              tabIndex={0}
                 className={`labelCell ${
                   filters[filter.value] &&
                   filters[filter.value] === filterVals.value
@@ -34,6 +35,7 @@ const Filters = props => {
                     : 'not-selected'
                 }`}
                 onClick={() => onFilterSelect(filter.value, filterVals.value)}
+                onKeyPress={(ev) => onFilterSelect(filter.value, filterVals.value)}
               >
                 {filterVals.label}
               </span>

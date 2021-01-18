@@ -145,7 +145,7 @@ The application is fully response. It follows 4 column structure for devices abo
 The application has been fully optimized and uses static generation for better caching. All static assets (JS, CSS, images, fonts, etc) are automatically served from an Edge Network, which is blazingly fast.
 
 Application uses all the best practices and relies on an API middleware which gives client the power to ask for exactly what they need and nothing more, making it easier to evolve APIs over time.
-Pagination is also included for results for better performance.
+<!-- Pagination is also included for results for better performance. -->
 
 ### Lighthouse Audit
 

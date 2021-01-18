@@ -8,17 +8,17 @@ import NotFound from '../NotFound';
 
 const LaunchPrograms = props => {
   const { launches = [], loading } = props;
-  const { next, prev, paginatedData, currentPage, maxPage } = usePagination(
-    launches,
-    8,
-  );
+//   const { next, prev, paginatedData, currentPage, maxPage } = usePagination(
+//     launches,
+//     8,
+//   );
   return (
     <>
       <Row>
         {loading && <Loader />}
-        {!loading && paginatedData.length === 0 && <NotFound />}
-        {paginatedData &&
-          paginatedData.map(launch => (
+        {!loading && launches.length === 0 && <NotFound />}
+        {launches &&
+          launches.map(launch => (
             <Col
               md={6}
               xl={3}
@@ -80,7 +80,7 @@ const LaunchPrograms = props => {
             </Col>
           ))}
       </Row>
-      {maxPage > 1 && (
+      {/* {maxPage > 1 && (
         <>
           <nav aria-label="Page navigation">
             <ul className="pagination justify-content-center">
@@ -102,7 +102,7 @@ const LaunchPrograms = props => {
             </ul>
           </nav>
         </>
-      )}
+      )} */}
     </>
   );
 };
